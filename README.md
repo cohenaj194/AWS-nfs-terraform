@@ -10,7 +10,6 @@ First create an AWS EC2 ubuntu 14.04 instance, and IAM user with “administrato
 
 Then clone the git repo:
 
-    #!/bin/bash
     git clone git@github.com:cohenaj194/AWS-nfs-terraform.git
     cd AWS-nfs-terraform
     #checks that ssh key id_rsa.pub exists
