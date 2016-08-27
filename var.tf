@@ -7,3 +7,6 @@ variable "aws_secret_key" {
 variable "region" {
 	default="fill this in"
 }
+variable "keypair" {
+  default="/home/ubuntu/.ssh/id_rsa.pub"
+}
