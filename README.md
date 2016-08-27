@@ -20,7 +20,7 @@ Then clone the git repo:
     	echo "ssh key already exists"
     fi
 
-Enter your IAM secret key, IAM access key and AWS region into the var.tf file.
+Enter your IAM secret key, IAM access key and AWS region into the var.tf file.  If you would like to change the default keypair from `~/.ssh/id_rsa.pub` also change the value of the variable "keypair", otherwise you will only be able to access your new instances from this EC2 instance running terraform.
 After that run terraform:
 
     terraform plan
