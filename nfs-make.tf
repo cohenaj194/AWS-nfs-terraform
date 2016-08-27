@@ -5,10 +5,6 @@ provider "aws" {
   region = "${var.region}"
 }
 
-variable "keypair" {
-  default="/home/ubuntu/.ssh/id_rsa.pub"
-}
-
 #uploads the key pair if it doesnt already exist as terra
 resource "aws_key_pair" "deployer" {
   key_name = "terra" 
